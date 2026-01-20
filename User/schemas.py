@@ -38,5 +38,4 @@ class UserCreate(BaseModel):
     email: str
     password: str
     department_id: Optional[int] = None
-    department_name: Optional[str] = None
     role: RoleEnum
