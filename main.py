@@ -1,6 +1,5 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-
 from database import engine, Base
 from Department.APIs import router as dept_router
 from User.APIs import router as user_router
@@ -17,7 +16,7 @@ Base.metadata.create_all(bind=engine)
 dept_models.Base.metadata.create_all(bind=engine)
 user_models.Base.metadata.create_all(bind=engine)
 
-app = FastAPI()
+app = FastAPI(debug=True)
 
 # Register routers
 app.include_router(dept_router)
@@ -35,3 +34,6 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+@app.get("/test")
+async def test_route():
+    return {"message": "API is working"}
