@@ -65,8 +65,8 @@ The Grievance Cell System is a modular, FastAPI-based backend application design
 1. **Clone the repo**
 
    ```bash
-   git clone https://github.com/your-org/grievance-cell-2.0.git
-   cd grievance-cell
+   git clone https://github.com/ArshAli911/grievance-cell-2.0
+   cd grievance-cell-2.0
    ```
 2. **Create Virtual Environment**
 
