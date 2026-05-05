@@ -3,28 +3,45 @@
 ## Table of Contents
 
 1. [Overview](#overview)
-2. [Features](#features)
-3. [Architecture & Technologies](#architecture--technologies)
-4. [Installation & Setup](#installation--setup)
-5. [Authentication & Authorization](#authentication--authorization)
-6. [API Endpoints](#api-endpoints)
+2. [Functionality Preview](#functionality-preview)
+3. [Features](#features)
+4. [Architecture & Technologies](#architecture--technologies)
+5. [Installation & Setup](#installation--setup)
+6. [Authentication & Authorization](#authentication--authorization)
+7. [API Endpoints](#api-endpoints)
 
    * Authentication
    * Users
    * Departments
    * Grievances
    * Comments
-7. [Database Schema & Table Attributes](#database-schema--table-attributes)
-8. [CRUD Operations](#crud-operations)
-9. [Usage Examples](#usage-examples)
-10. [Contributing](#contributing)
-11. [License](#license)
+8. [Database Schema & Table Attributes](#database-schema--table-attributes)
+9. [CRUD Operations](#crud-operations)
+10. [Usage Examples](#usage-examples)
+11. [Contributing](#contributing)
+12. [License](#license)
 
 ---
 
 ## Overview
 
 The Grievance Cell System is a modular, FastAPI-based backend application designed to streamline grievance management within organizations. It allows users to raise issues, employees to address them, and administrators to oversee the entire workflow—all secured via JWT Bearer authentication and role-based access control.
+
+---
+
+## Functionality Preview
+
+### API Documentation
+
+The FastAPI Swagger UI exposes the authentication, department, user, grievance, and comment routes for testing protected workflows with bearer token authorization.
+
+![FastAPI Swagger UI showing Grievance Cell endpoints](./1752463631687.jpg)
+
+### Grievance Workflow
+
+The grievance lifecycle starts with submission, ticket creation, employee assignment, role-based listing, and final resolution with status and timestamp updates.
+
+![Grievance management workflow flowchart](./1752463632124.jpg)
 
 ---
 
